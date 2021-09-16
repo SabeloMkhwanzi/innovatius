@@ -13,7 +13,7 @@ $headers =
     'CC: sabelo.mailme@gmail.com';
 if ($email != null) {
     mail($to, $subject, $txt, $headers);
+    header('Location:thankyou.html');
 }
 //redirect
-header('Location:thankyou.html');
 ?>
