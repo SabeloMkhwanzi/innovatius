@@ -160,8 +160,41 @@
 																<div id="et_pb_contact_form_0" class="et_pb_with_border et_pb_module et_pb_contact_form_0 et_pb_contact_form_container clearfix" data-form_unique_num="0">
 																	<div class="et-pb-contact-message">																		
 																	</div>			
-																	<div class="et_pb_contact">			
-																		<form action="mail.php" method="post">
+																	<div class="et_pb_contact">	
+																		
+																		
+
+																	
+																	<form id="contact" action="" method="post">
+																		<input placeholder="Your name" name="name" type="text" tabindex="1" autofocus>
+																	
+																		<input placeholder="Your Email Address" name="email" type="email" tabindex="2">
+																
+																		<input placeholder="Your Phone Number" name="tel" type="tel" tabindex="3" >
+																	
+																		<input placeholder="Type your subject line" type="text" name="subject" tabindex="4">
+																	
+																		<textarea name="message" placeholder="Type your Message Details Here..." tabindex="5"></textarea>
+																	
+																	<div>
+																		<p class="success"> <?php echo $success;  ?></p>
+																		<p class="failed"> <?php echo $failed;  ?></p>
+																	</div>
+																
+																		<button type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit Now</button>
+																
+																	</form>
+
+
+
+
+
+
+
+
+
+
+																		<!-- <form action="mail.php" method="post">
 																		<label for="name">Your Name</label>
 																		<input type="text"  name="name" placeholder="Your name..">
 																		<label for="lname">Email</label>
@@ -171,7 +204,7 @@
 																		<textarea  name="message" placeholder="Write something.." style="height:200px"></textarea>
 														
 																		<button type="submit">Submit</button>
- 																	 </form>
+ 																	 </form> -->
 																	</div> <!-- .et_pb_contact -->			
 																</div> <!-- .et_pb_contact_form_container -->						
 															</div> <!-- .et_pb_column -->			
